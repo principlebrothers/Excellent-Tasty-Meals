@@ -10,17 +10,21 @@
   transition: 0.5s;
 }
 
+.navbar-brand {
+  margin-left: 7%;
+}
+
 img {
   margin-right: 5px;
 }
 
 .collapse {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .nav-item {
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 .card {
@@ -46,5 +50,9 @@ img {
     display: block;
     width: 100%;
     text-align: center;
+  }
+
+  .navbar-brand {
+    margin-left: 0;
   }
 }
