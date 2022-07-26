@@ -1,7 +1,36 @@
 * {
   box-sizing: border-box;
+  margin: 0px;
 }
 
-h1 {
-  color: blueviolet;
+.nav-link:hover {
+  background-color: #fff;
+  border: 5px solid rgb(245, 10, 61);
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+img {
+  margin-right: 5px;
+}
+
+.collapse {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  margin-left: 15%;
+}
+
+@media (max-width: 575.98px) {
+  .nav-item {
+    margin-left: 0;
+  }
+
+  .navbar-nav {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
