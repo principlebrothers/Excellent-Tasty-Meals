@@ -1,5 +1,3 @@
-import _ from 'lodash';
+// fic
 import './style.css';
-import Icon from './icon.png';
-
-
+// import Icon from './icon.png';
