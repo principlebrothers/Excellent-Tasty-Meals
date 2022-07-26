@@ -23,6 +23,20 @@ img {
   margin-left: 15%;
 }
 
+.card {
+  max-width: 18rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likes-info {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 575.98px) {
   .nav-item {
     margin-left: 0;
