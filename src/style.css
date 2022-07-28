@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
+  margin: 0;
 }
 
 .nav-link:hover {
@@ -59,7 +59,7 @@ img {
   overflow-y: scroll;
 }
 
-.mymodal.active{
+.mymodal.active {
   transform: translate(-50%, -50%) scale(1);
 }
 
@@ -74,7 +74,7 @@ img {
   cursor: pointer;
   border: none;
   outline: none;
-  background-color: none;
+  background-color: lightgrey;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -82,7 +82,7 @@ img {
 .closeBtn-container .closed-button:hover {
   background-color: #e9154a;
   color: #e9f4fb;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .meal-description {
@@ -96,7 +96,6 @@ img {
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 
 .mymodal .img-container {
   display: flex;
@@ -128,10 +127,11 @@ img {
   padding: 10px;
   border-radius: 5px;
   background-color: white;
-  box-shadow: 0px 10px 40px 0px rgba(47, 47, 47, .2);
+  box-shadow: 0 10px 40px 0 rgba(47, 47, 47, 0.2);
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
   padding: 10px;
   margin: 10px auto;
   display: block;
@@ -143,11 +143,12 @@ input[type="text"], textarea {
   color: black;
 }
 
-input[type="text"]:focus, textarea:focus{
- outline: none;
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
 }
 
-button[type="submit"]{
+button[type="submit"] {
   margin: 10px auto;
   display: block;
   border-radius: 25px;
@@ -158,14 +159,14 @@ button[type="submit"]{
   font-size: 18px;
 }
 
-button[type="submit"]:hover{
+button[type="submit"]:hover {
   background-color: #e9154a;
   color: #e9f4fb;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 #overlay {
-  position:fixed;
+  position: fixed;
   opacity: 0;
   transition: 200ms ease-in-out;
   top: 0;
