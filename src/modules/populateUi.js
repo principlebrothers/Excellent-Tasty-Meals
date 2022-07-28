@@ -1,11 +1,11 @@
-import { getData, getComment } from "./API";
+import { getData, getComment } from './API.js';
 
 const row = document.querySelector('.row');
-const popUpMealDetails = document.querySelector(".popUp-meal-details");
-const commentBoard  = document.querySelector('.comment-board');
+const popUpMealDetails = document.querySelector('.popUp-meal-details');
+const commentBoard = document.querySelector('.comment-board');
 const commentCount = document.querySelector('.comment-cout');
 
-//Populate the Hopepage
+// Populate the Hopepage
 const renderUi = (input) => {
   row.innerHTML += `<div class="col">
   <article class="card border-primary mb-3 id= meal-${input.idCategory}">
@@ -29,8 +29,8 @@ const renderUi = (input) => {
       type="button"
       id=${input.idCategory}
     >Comments</button>
-  </article>`
-}
+  </article>`;
+};
 
 const printFood = async () => {
   const allFood = await getData();
@@ -41,9 +41,9 @@ const printFood = async () => {
 
 // Create popup meals
 const createPopUp = (mealData) => {
-  const form = document.querySelector("form");
+  const form = document.querySelector('form');
   const id = mealData.idCategory;
-  form.setAttribute('data-id', id)
+  form.setAttribute('data-id', id);
 
   popUpMealDetails.innerHTML = `
   <div class="img-container">
@@ -66,39 +66,41 @@ const arrangeComments = (receiveComment) => {
       <span class="date">${receiveComment.creation_date}</span>
       <span class="name">${receiveComment.username}: </span>
       <span class="comment">${receiveComment.comment}</span>
-  </li>`
-}
+  </li>`;
+};
 
 // Display comment on the screen
 const showComment = async (id) => {
   const receivedComm = await getComment(id);
-  commentBoard.innerHTML = "";
+  commentBoard.innerHTML = '';
   commentCount.textContent = receivedComm.length;
 
-  receivedComm.forEach((info)=>{
+  receivedComm.forEach((info) => {
     arrangeComments(info);
-  })
-}
+  });
+};
 
 // Populate selected food
 const displayPopUp = async (id) => {
   const allMeals = await getData();
 
-  const choice = allMeals.find((item)=>item.idCategory === id)
-  
+  const choice = allMeals.find((item) => item.idCategory === id);
+
   createPopUp(choice);
-}
+};
 
 // Open popup model
-const openModel = (bgOverlay, modal)=> {
-  modal.classList.add("active");
-  bgOverlay.classList.add("active");
-}
+const openModel = (bgOverlay, modal) => {
+  modal.classList.add('active');
+  bgOverlay.classList.add('active');
+};
 
 // Close Popup model
-const closeModel = (bgOverlay, modal)=> {
-  modal.classList.remove("active");
-  bgOverlay.classList.remove("active");
-}
+const closeModel = (bgOverlay, modal) => {
+  modal.classList.remove('active');
+  bgOverlay.classList.remove('active');
+};
 
-export {printFood, displayPopUp, openModel, closeModel, showComment, arrangeComments, row};
+export {
+  printFood, displayPopUp, openModel, closeModel, showComment, arrangeComments, row,
+};
