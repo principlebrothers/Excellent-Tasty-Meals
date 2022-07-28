@@ -139,6 +139,7 @@ input[type="text"], textarea {
   border: 1px solid lightgrey;
   background: none;
   width: 274px;
+  height: 44px;
   color: black;
 }
 
