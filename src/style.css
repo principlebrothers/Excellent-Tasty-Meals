@@ -153,7 +153,6 @@ button[type="submit"] {
   display: block;
   border-radius: 25px;
   border: 1px solid;
-  width: 40%;
   height: 40%;
   cursor: pointer;
   font-size: 18px;
