@@ -33,7 +33,7 @@ form.addEventListener('submit', async (event) => {
   const { id } = event.target.dataset;
 
   updateComment(trim(input.value), textarea.value, id);
-  arrangeComments({ creation_date: id, username: input.value, comment: textarea.value });
+  arrangeComments({ creation_date: '', username: input.value, comment: textarea.value });
   input.value = '';
   textarea.value = '';
 });
