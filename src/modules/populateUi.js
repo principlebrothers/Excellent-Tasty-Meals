@@ -73,12 +73,22 @@ const arrangeComments = (receiveComment) => {
 const showComment = async (id) => {
   const receivedComm = await getComment(id);
   commentBoard.innerHTML = '';
-  commentCount.textContent = receivedComm.length;
-
-  receivedComm.forEach((info) => {
+  // commentCount.textContent = receivedComm.length;
+  commentCounter(receivedComm);
+  console.log(receivedComm)
+  receivedComm.find((info) => {
     arrangeComments(info);
   });
 };
+
+// Comment Counter
+const commentCounter = (elem) => {
+ if(elem.length) {
+  commentCount.textContent = elem.length;
+ }else if (!elem.length){
+  commentCount.textContent = 0;
+ }
+}
 
 // Populate selected food
 const displayPopUp = async (id) => {
