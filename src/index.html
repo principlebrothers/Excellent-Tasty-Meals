@@ -66,32 +66,64 @@
         </div>
       </div>
     </nav>
+
+    <!-- HOMEPAGE POPULATION -->
     <div class="container mt-5">
-      <div class="row">
-        <div class="col">
-          <article class="card border-primary
-          mb-3">
-            <div class="card-body">
-              <img
-                src="https://i.postimg.cc/43KMdrcr/tinywow-remove-bg-3746836.png
-              "
-                alt="icon"
-                width="250"
-                height="300"
-              />
-            </div>
-            <div class="card-header">
-              <div><p>Space 1</p></div>
-              <div class="likes-info">
-                <i class="fa fa-heart"></i><span>5 likes</span>
-              </div>
-            </div>
-            <button class="comment-btn" type="button">Comments</button>
-          </article>
-        </div>
-      </div>
+      <div class="row"></div>
     </div>
 
+    <section class="mymodal" id="mymodal">
+      <div class="closeBtn-container">
+        <button data-closed-button class="closed-button">&times;</button>
+      </div>
+      <div class="popUp-meal-details"></div>
+      <!-- JavaScript will populate here -->
+      <article class="comment-container">
+        <div class="comment-board-container">
+          <h2 class="title">
+            Comments (<span class="comment-cout">2</span>)
+          </h2>
+          <ul class="comment-board">
+            <li>
+              <span class="date">27-07-2022</span>
+              <span class="name">Alex: </span>
+              <span class="comment">I like this</span>
+            </li>
+            <li>
+              <span class="date">27-07-2022</span>
+              <span class="name">Alex: </span>
+              <span class="comment">I like this</span>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <form action="" method="post">
+            <div id="formfield">
+              <input
+                type="text"
+                name="text"
+                class="text"
+                size="50"
+                placeholder="Name"
+                required
+              />
+              <textarea
+                name="insight"
+                id="insight"
+                cols="30"
+                rows="10"
+                size="50"
+                placeholder="Your insight"
+                required
+                spellcheck="true"
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </article>
+    </section>
+    <div id="overlay"></div>
     <footer
       class="bg-dark text-center text-lg-start text-white container-fluid fixed-bottom zindex-fixed:1030;"
     >
