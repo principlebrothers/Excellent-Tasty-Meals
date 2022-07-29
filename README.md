@@ -2,69 +2,81 @@
 
 # Project Name Excellent Tasty Meals
 
-This Website was built to display different categoies of food with functionalities to like and comment on the individual food. MealDB APi and involvement API were used for the backend.
+This is a capstone project built to display different categories of food with functionalities to like and comment on the individual food. MealDB API and involvement API were used for the backend.
 
 
 ## Built With
-- HTML
-- CSS
-- JS
+* HTML
+* CSS
+* JS
+
+## FrameWork
+* Webpack
+* Jest
+* Babel
+* Bootstrap
+
 ## Getting Started
-- Prerequisites
 
-- Text editor
-- GitHub
-- Clone this repository on to your local PC
+Prerequisites
+* Text editor
+* GitHub
 
-Click on the Code green button
-By the right end of the read-only input containing the repository link click the clipboard icon to copy the link
-In your local PC, open your terminal in the folder you would like to clone the repository into
-Clone the repository with the command: git clone (copied link); like so: https://github.com/OyePriscilla/Leaderboard-Api
-After the clone, type in the command cd Leaderboard-Api to access the directory on the terminal.
-Once the files are on your machine, open the Leaderboard-Api folder in Visual Studio Code, and follow the steps in Installation & Set Up
-🛠 Installation & Set Up
-Install Node Modules
+Clone this repository on to your local PC
 
-npm install
-Start the development server
+* Click on the Code green button
+* By the right end of the read-only input containing the repository link click the clipboard icon to copy the link
+* In your local PC, open your terminal in the folder you would like to clone the repository into
+* Clone the repository with the command: git clone (copied link); like so: https://github.com/principlebrothers/Excellent-Tasty-Meals
+* After the clone, type in the command cd Leaderboard-Api to access the directory on the terminal.
 
-npm start
-Open http://localhost:8080 to view it in the browser.
+- Once the files are on your machine, open the Leaderboard-Api folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation & Set Up
 
-🚀 Building and Running for Production
-Generate a full static production build
+## 🛠 Installation & Set Up
 
-npm run build
-## Authors
+1. Install Node Modules
 
-👤 **Author1**
+   ```sh
+   npm install
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+2. Start the development server
 
-👤 **Author2**
+   ```sh
+   npm start
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+3. Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
-## 🤝 Contributing
+## 🚀 Building and Running for Production
 
+1. Generate a full static production build
+
+   ```sh
+   npm run build
+
+## Author 1
+👤 **Author**
+👤 **Oyebade Prisicilla**
+
+- GitHub: [@OyePriscilla](https://github.com/OyePriscilla)
+- Twitter: [@Prisicilla](https://twitter.com/Prisicilla)
+- LinkedIn: [Priscilla](https://linkedin.com/in/Priscilla)
+
+## Author 2
+
+👤 **Ernest Anyewe Adonu**
+
+- GitHub: [@principlebrothers](https://github.com/principlebrothers)
+- Twitter: [@adonu_ernest](https://twitter.com/adonu_ernest)
+- LinkedIn: [Ernest Anyewe Adonu](www.linkedin.com/in/ernest-adonu-7b61951b0)
+
+## Contibution
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
-
-Give a ⭐️ if you like this project!
-
 ## Acknowledgments
+Hat tip to the person that reviewed my work! Thanks alot.
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+## License
+This project is MIT licensed.
 
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
