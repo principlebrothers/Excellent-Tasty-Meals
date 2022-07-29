@@ -6,7 +6,6 @@ const commentBoard = document.querySelector('.comment-board');
 const commentCount = document.querySelector('.comment-cout');
 const form = document.querySelector('form');
 
-
 // Create popup meals
 const createPopUp = (mealData) => {
   const id = mealData.idCategory;
@@ -80,5 +79,5 @@ const closeModel = (bgOverlay, modal) => {
 };
 
 export {
-  printFood, displayPopUp, openModel, closeModel, showComment, arrangeComments, commentCounter, row,
+  displayPopUp, openModel, closeModel, showComment, arrangeComments, commentCounter, row,
 };

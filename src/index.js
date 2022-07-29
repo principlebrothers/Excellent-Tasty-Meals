@@ -1,13 +1,24 @@
 import './style.css';
-// import Icon from './icon.png';
+import { trim } from 'lodash';
+import {
+  displayPopUp, openModel, closeModel, row, showComment, arrangeComments,
+} from './modules/populateUi.js';
 import getMeals from './module/getMeals.js';
 import { getLikes, mealCounter } from './module/mealLikes.js';
+import { updateComment } from './modules/API.js';
 
-const container = document.querySelector('.container');
 const baseUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xdgpBu6wgzd0D3VYQ10x/likes/';
 
-const row = document.querySelector('.row');
 const totalItem = document.querySelector('.total-item');
+const form = document.querySelector('form');
+const input = document.querySelector('input');
+const textarea = document.querySelector('textarea');
+const closedModalButtons = document.querySelector('.closed-button');
+const overlay = document.getElementById('overlay');
+const modalContainer = document.querySelector('#mymodal');
+const container = document.querySelector('.container');
+const likeButtons = document.querySelectorAll('.like-button');
+const likesNumber = document.querySelectorAll('.no-of-likes');
 
 const displayMeals = async () => {
   const meals = await getMeals();
@@ -16,7 +27,7 @@ const displayMeals = async () => {
     row.innerHTML += `
     <div class="col" id="${meal.idCategory}">
     <article class="card border-primary
-    mb-5">
+    mb-5" id="food-container">
       <div class="card-body">
         <img
           src=${meal.strCategoryThumb}
@@ -38,9 +49,6 @@ const displayMeals = async () => {
     container.append(row);
   });
 
-  const likeButtons = document.querySelectorAll('.like-button');
-  const likesNumber = document.querySelectorAll('.no-of-likes');
-
   likeButtons.forEach((btn, index) => {
     btn.addEventListener('click', () => {
       likesNumber[index].innerHTML = `${parseInt(likesNumber[index].innerHTML, 10) + 1}`;
@@ -57,22 +65,6 @@ const displayMeals = async () => {
   });
   getLikes();
 };
-
-displayMeals();
-import { trim } from 'lodash';
-import {
-  printFood, displayPopUp, openModel, closeModel, row, showComment, arrangeComments,
-} from './modules/populateUi.js';
-import { updateComment } from './modules/API.js';
-
-const form = document.querySelector('form');
-const input = document.querySelector('input');
-const textarea = document.querySelector('textarea');
-const closedModalButtons = document.querySelector('.closed-button');
-const overlay = document.getElementById('overlay');
-const modalContainer = document.querySelector('#mymodal');
-
-printFood();
 
 row.addEventListener('click', (event) => {
   const commentBtn = event.target;
@@ -97,3 +89,5 @@ form.addEventListener('submit', async (event) => {
   input.value = '';
   textarea.value = '';
 });
+
+displayMeals();

@@ -3,6 +3,8 @@
  */
 import { mealCounter } from './src/module/mealLikes.js';
 import mealsss from './__mock__/mealDetails.js';
+import apiInfo from './__mock__/api.js';
+import { commentCounter } from './src/modules/populateUi.js';
 
 describe('Check the length of meals', () => {
   test('# add two item', () => {
@@ -11,8 +13,6 @@ describe('Check the length of meals', () => {
     expect(mealCounter(mealsss, totalItem)).toBe(2);
   });
 });
-import apiInfo from './__mock__/api.js';
-import { commentCounter } from './src/modules/populateUi.js';
 
 describe('Comment counter', () => {
   document.body.innerHTML = `<h2 class="title">
