@@ -6,39 +6,6 @@ const commentBoard = document.querySelector('.comment-board');
 const commentCount = document.querySelector('.comment-cout');
 const form = document.querySelector('form');
 
-// Populate the Hopepage
-const renderUi = (input) => {
-  row.innerHTML += `<div class="col">
-  <article class="card border-primary mb-3 id= meal-${input.idCategory}">
-    <div class="card-body">
-      <img
-        src="${input.strCategoryThumb}
-      "
-        alt="icon"
-        width="250"
-        height="300"
-      />
-    </div>
-    <div class="card-header">
-      <div><p>${input.strCategory}</p></div>
-      <div class="likes-info">
-        <i class="fa fa-heart"></i><span>5 likes</span>
-      </div>
-    </div>
-    <button
-      class="comment-btn"
-      type="button"
-      id=${input.idCategory}
-    >Comments</button>
-  </article>`;
-};
-
-const printFood = async () => {
-  const allFood = await getData();
-  allFood.forEach((meal) => {
-    renderUi(meal);
-  });
-};
 
 // Create popup meals
 const createPopUp = (mealData) => {
