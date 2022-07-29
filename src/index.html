@@ -70,6 +70,48 @@
       </div>
     </div>
 
+    <section class="mymodal" id="mymodal">
+      <div class="closeBtn-container">
+        <button data-closed-button class="closed-button" type="button">&times;</button>
+      </div>
+      <div class="popUp-meal-details"></div>
+      <!-- JavaScript will populate here -->
+      <article class="comment-container">
+        <div class="comment-board-container">
+          <h2 class="title">
+            Comments (<span class="comment-cout">0</span>)
+          </h2>
+          <ul class="comment-board">
+            <!-- Input comment -->
+          </ul>
+        </div>
+        <div class="container">
+          <form method="post">
+            <div id="formfield">
+              <input
+                type="text"
+                name="text"
+                class="text"
+                size="50"
+                placeholder="Name"
+                required
+              />
+              <textarea
+                name="insight"
+                id="insight"
+                cols="30"
+                rows="10"
+                placeholder="Your insight"
+                required
+                spellcheck="true"
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </article>
+    </section>
+    <div id="overlay"></div>
     <footer
       class="bg-dark text-center text-lg-start text-white container-fluid;"
     >

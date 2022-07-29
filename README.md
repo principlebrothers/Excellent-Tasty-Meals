@@ -46,6 +46,10 @@ Clone this repository on to your local PC
 
 3. Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 
+## Demo Video and link
+ [Demo video] (https://drive.google.com/file/d/1nWbrxUOsDISU6Zbp_cJAd0sPSgaNxPi-/view?usp=sharing)
+ [Demo link]()
+
 ## 🚀 Building and Running for Production
 
 1. Generate a full static production build
