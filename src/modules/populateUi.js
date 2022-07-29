@@ -70,11 +70,11 @@ const arrangeComments = (receiveComment) => {
 };
 
 // Comment Counter
-const commentCounter = (elem) => {
+const commentCounter = (elem, element) => {
   if (elem.length) {
-    commentCount.textContent = elem.length;
+    return element.textContent = elem.length;
   } else if (!elem.length) {
-    commentCount.textContent = 0;
+    return element.textContent = 0;
   }
 };
 
@@ -83,7 +83,7 @@ const showComment = async (id) => {
   const receivedComm = await getComment(id);
   commentBoard.innerHTML = '';
   // commentCount.textContent = receivedComm.length;
-  commentCounter(receivedComm);
+  commentCounter(receivedComm, commentCount);
 
   receivedComm.find((info) => arrangeComments(info));
 };
@@ -110,5 +110,5 @@ const closeModel = (bgOverlay, modal) => {
 };
 
 export {
-  printFood, displayPopUp, openModel, closeModel, showComment, arrangeComments, row,
+  printFood, displayPopUp, openModel, closeModel, showComment, arrangeComments, commentCounter, row,
 };
