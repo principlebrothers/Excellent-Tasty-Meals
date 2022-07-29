@@ -1,10 +1,10 @@
 import { getData, getComment } from './API.js';
-import form from '../index.js';
 
 const row = document.querySelector('.row');
 const popUpMealDetails = document.querySelector('.popUp-meal-details');
 const commentBoard = document.querySelector('.comment-board');
 const commentCount = document.querySelector('.comment-cout');
+const form = document.querySelector('form');
 
 // Populate the Hopepage
 const renderUi = (input) => {
