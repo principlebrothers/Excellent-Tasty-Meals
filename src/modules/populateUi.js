@@ -70,10 +70,13 @@ const arrangeComments = (receiveComment) => {
 };
 
 // Comment Counter
+// eslint-disable-next-line
 const commentCounter = (elem, element) => {
   if (elem.length) {
+    // eslint-disable-next-line
     return element.textContent = elem.length;
-  } else if (!elem.length) {
+  } if (!elem.length) {
+    // eslint-disable-next-line
     return element.textContent = 0;
   }
 };

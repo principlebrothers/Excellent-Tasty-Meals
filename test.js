@@ -1,8 +1,8 @@
 /**
  * @jest-environment jsdom
  */
-import apiInfo from "./__mock__/api";
-import {commentCounter} from './src/modules/populateUi'
+import apiInfo from './__mock__/api.js';
+import { commentCounter } from './src/modules/populateUi.js';
 
 describe('Comment counter', () => {
   document.body.innerHTML = `<h2 class="title">
@@ -12,5 +12,4 @@ describe('Comment counter', () => {
   test('Count the number of comments to be four (4)', () => {
     expect(commentCounter(apiInfo, commentCount)).toBe(4);
   });
-
 });
