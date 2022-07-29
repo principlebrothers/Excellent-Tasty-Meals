@@ -1,4 +1,5 @@
 import { getData, getComment } from './API.js';
+import form from '../index.js';
 
 const row = document.querySelector('.row');
 const popUpMealDetails = document.querySelector('.popUp-meal-details');
@@ -41,7 +42,6 @@ const printFood = async () => {
 
 // Create popup meals
 const createPopUp = (mealData) => {
-  const form = document.querySelector('form');
   const id = mealData.idCategory;
   form.setAttribute('data-id', id);
 
