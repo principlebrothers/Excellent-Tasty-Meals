@@ -17,8 +17,6 @@ const closedModalButtons = document.querySelector('.closed-button');
 const overlay = document.getElementById('overlay');
 const modalContainer = document.querySelector('#mymodal');
 const container = document.querySelector('.container');
-const likeButtons = document.querySelectorAll('.like-button');
-const likesNumber = document.querySelectorAll('.no-of-likes');
 
 const displayMeals = async () => {
   const meals = await getMeals();
@@ -48,6 +46,9 @@ const displayMeals = async () => {
         `;
     container.append(row);
   });
+
+  const likeButtons = document.querySelectorAll('.like-button');
+  const likesNumber = document.querySelectorAll('.no-of-likes');
 
   likeButtons.forEach((btn, index) => {
     btn.addEventListener('click', () => {
