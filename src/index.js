@@ -37,3 +37,5 @@ form.addEventListener('submit', async (event) => {
   input.value = '';
   textarea.value = '';
 });
+
+export default form;
