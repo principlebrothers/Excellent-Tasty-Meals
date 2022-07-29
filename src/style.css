@@ -1,13 +1,16 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
+  margin: 0;
 }
 
-.nav-link:hover {
-  background-color: #fff;
-  border: 5px solid rgb(245, 10, 61);
-  font-weight: 600;
-  transition: 0.5s;
+body {
+  background-image: url('https://i.postimg.cc/dtJv4P60/foodies-5.jpg');
+  background-blend-mode: darken;
+  backdrop-filter: blur(2px);
+}
+
+article {
+  background-color: rgb(255, 244, 149) !important;
 }
 
 .navbar-brand {
@@ -36,9 +39,59 @@ img {
   justify-content: space-between;
 }
 
-.likes-info {
+.like-button {
   display: flex;
   flex-direction: column;
+}
+
+.logo-name {
+  border-bottom: 2px solid #fff;
+}
+
+.container {
+  margin: 25px auto;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.comment-btn {
+  display: block;
+  width: 65%;
+  height: 40px;
+  margin: 10px auto;
+  border-radius: 20px;
+  color: khaki;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.comment-btn:active,
+.like-button:active {
+  font-size: 24px;
+}
+
+.comment-btn:hover,
+.like-button:hover {
+  background-color: black !important;
+  border: 2px solid rgb(247, 33, 79);
+}
+
+.nav-link {
+  color: khaki !important;
+  font-weight: 800;
+}
+
+.nav-link:hover {
+  background-color: #fff;
+  border: 3px solid rgb(245, 10, 61);
+  font-weight: 600;
+  transition: 0.5s;
+  color: rgb(245, 10, 61) !important;
 }
 
 @media (max-width: 575.98px) {
