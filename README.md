@@ -48,7 +48,7 @@ Clone this repository on to your local PC
 
 ## Demo Video and link
  [Demo video] (https://drive.google.com/file/d/1nWbrxUOsDISU6Zbp_cJAd0sPSgaNxPi-/view?usp=sharing)
- [Demo link]()
+ [Demo link](https://principlebrothers.github.io/Excellent-Tasty-Meals/dist/)
 
 ## 🚀 Building and Running for Production
 
