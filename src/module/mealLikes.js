@@ -16,6 +16,7 @@ const getLikes = async () => {
     });
 };
 
+// eslint-disable-next-line
 const mealCounter = (meals, nodeItem) => { return nodeItem.innerHTML = meals.length; };
 
 export { getLikes, mealCounter };
