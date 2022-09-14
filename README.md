@@ -30,7 +30,7 @@ Clone this repository on to your local PC
 * Clone the repository with the command: git clone (copied link); like so: https://github.com/principlebrothers/Excellent-Tasty-Meals
 * After the clone, type in the command cd Leaderboard-Api to access the directory on the terminal.
 
-- Once the files are on your machine, open the Leaderboard-Api folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation & Set Up
+- Once the files are on your machine, open the Excellent Tasty Meal folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation & Set Up
 
 ## 🛠 Installation & Set Up
 
